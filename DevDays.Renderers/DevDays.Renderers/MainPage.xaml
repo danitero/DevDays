@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:controls="clr-namespace:DevDays.Renderers.Controls;assembly=DevDays.Renderers"
              x:Class="DevDays.Renderers.MainPage">
-  <Grid>
+  <Grid
+    Padding="20">
     <Grid.RowDefinitions>
       <RowDefinition Height="1*"/>
       <RowDefinition Height="2*"/>
@@ -29,7 +31,8 @@
       Grid.Column="2"
       TextColor="White"
       VerticalOptions="Center"/>
-    <Image
+    <controls:ExtendedImage
+      x:Name="image"
       Grid.ColumnSpan="3"
       Grid.Row="1"
       Source="xamarin_logo.png"/>

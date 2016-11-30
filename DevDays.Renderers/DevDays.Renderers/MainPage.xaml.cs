@@ -19,7 +19,7 @@ namespace DevDays.Renderers
         {
             var button = (Button)sender;
 
-            var color = button.BackgroundColor;
+            image.ImageColor = button.BackgroundColor;
         }
     }
 }
